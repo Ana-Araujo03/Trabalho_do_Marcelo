@@ -7,7 +7,7 @@ using Npgsql;
 
 namespace Trabalho_do_Marcelo
 {
-    public class FuncionarioDAO
+    public class Funcionario
     {
         private string connectionString = "Host=localhost;Username=postgres;Password=password_1234;Database=trabalho_marcelo";
 
@@ -115,7 +115,7 @@ namespace Trabalho_do_Marcelo
     {
         static void Main(string[] args)
         {
-            FuncionarioDAO dao = new FuncionarioDAO();
+            Funcionario dao = new Funcionario();
 
             // CREATE
             Console.WriteLine("Cadastrar Funcionário");
